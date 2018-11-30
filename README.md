@@ -10,7 +10,7 @@ Docker quick terminal 을 실행하고 Oracle을 찾기위해서
 예를 들자면 내가 찾은 파일은 **sath89/oracle-xe-11g** 라고 했을때 이미지를 받기위해서는  
 >**docker pull sath89/oracle-xe-11g**
 를 터미널 창에 입력한다.  
-**pull**받은 이미지를 확인하기 위해서는 **docker images** 혹은 **docekr image ls** 입력하면 확인할 수 있다. 
+**pull**받은 이미지를 확인하기 위해서는 **docker images** 혹은 **docekr image ls** 입력하면 확인할 수 있다.  
 받은 이미지를 구동, 즉 컨테이너를 생성하기 위해서는 다음과 같은 명령어가 필요하다.
 >**docker run -d --name oracle -p 8080:8080 -p 1521:1521 sath/orcle-xe-11g**
 여기서 **run**은 컨테이너를 실행한다는 것이고 **-d**는 백그라운도로 실행 명령어 **--name**은 자신이 지정하고 싶은 컨테이너의 이름을 설정하는것이다. 
