@@ -23,7 +23,7 @@ Docker quick terminal 을 실행하고 Oracle을 찾기위해서
 기존의 생성된 이미지와 구동된 컨테이너의 기록을 보고싶다면 
 **docker ps -a**를 입력하면 된다. 
 
-##2. Docker를 활용하여 MySQL 5.7을 어떻게 설치할 것인가?   
+## 2. Docker를 활용하여 MySQL 5.7을 어떻게 설치할 것인가?   
 첫번째는, 도커를 실행한 커맨더 창에  
 **docker search mysql**을 입력한다. 자신이 원하는 버전을 찾았다면 커맨더 창에는
 **Docker pull "원하는버전"** 을 입력하게 되면 이미지를 다운 받을 수 있다.  
