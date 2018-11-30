@@ -38,8 +38,7 @@ Docker quick terminal 을 실행하고 Oracle을 찾기위해서
 첫번째는, 도커를 실행한 커맨더 창에  
 **docker search mysql**을 입력한다. 자신이 원하는 버전을 찾았다면 커맨더 창에는
 **Docker pull "원하는버전"** 을 입력하게 되면 이미지를 다운 받을 수 있다.  
-예를 들어, 자신의 원하는 mysql의 버전이 최신버진이라면 
-**docker pull mysql:latest 혹은 특정 버전 즉, mysql:5.7**을 입력하면 그것과 관련되 이미지를 다운받을 수 있다.  
+예를 들어, 자신의 원하는 mysql의 버전이 최신버전이라면 **docker pull mysql:latest 혹은 특정 버전 즉, mysql:5.7**을 입력하면 그것과 관련되 이미지를 다운받을 수 있다.  
 다운로드가 끝나면 **docker images 혹은 docker image -ls**를 통해 이미지 목록을 확인할 수 있고, 내려받은 이미지를 컨테이너로 구동시키고자 한다면  
 **docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD='자신의 초기암호' --name mysql5 mysql:5.7**을 입력한다. 
 이 명령어가 의미하는 것은 컨테이너를 백그라운도로 실행하고 포트는 3306으로 맞추고 **mysql** 실행시 필요한 비밀번호는 자신이 입력한 암호이며 --name 이후롤 등장하는 것은 자신이 설정한 컨테이너의 이름이 되고, 마지막은 **mysql:5.7** 이미지로 부터 컨테이너를 실행한다는 것을 의미한다. 
