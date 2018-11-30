@@ -47,5 +47,10 @@ Docker quick terminal 을 실행하고 Oracle을 찾기위해서
 
 MySQL은 도커에서 기존의 받은 이미지를 통해 생성된 컨네이너를 구동함으로써 사용자 생성 과정이 시작된다. 처음에 root의 권한으로 MySQL을 실행하려면   **mysql -u root -p** 를 커맨더창에 입력하면 **mysql>** 이라는 커맨더 창으로 뜨게 된다.    **mysql>** 상태에서 사용자를 생성하려면 다음과 같은 명령어가 필요하다.    
 >create user <user-name>@'<host>' identified by "사용자암호";  
-  를 입력하면 사용자가 생성된것이다. 
+
+를 입력하면 사용자가 생성된것이다. 
+예를 들자면, **dooo** 라는 계정을 MySQL 추가 할 경우, 명령어
+>create user dooo@'%' identified by "암호"; 
+
+를 입력할시 **dooo**라는 유저가 생성된다. 
 
